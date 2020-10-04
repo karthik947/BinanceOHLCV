@@ -12,7 +12,7 @@
   "dependencies": {
     "bottleneck": "^2.19.5",
     "fast-csv": "^3.7.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "request": "^2.88.0",
     "request-promise": "^4.2.5"
   }
