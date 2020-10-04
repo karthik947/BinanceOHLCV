@@ -11,7 +11,7 @@ const getReqArray = ({symbol,fromTS,toTS,timeframe,tfw}) => {
   const n = Math.ceil((toTS-fromTS)/(1000*barw));
   return _.times(n,(i) => {
     const startTS = fromTS + i*1000*barw;
-    return `https://api.binance.com//api/v3/klines?symbol=${symbol}&interval=${timeframe}&startTime=${startTS}&limit=1000`
+    return `https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=${timeframe}&startTime=${startTS}&limit=1000`
   });
 }
 
