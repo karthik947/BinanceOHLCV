@@ -55,7 +55,7 @@ const download = async () => {
     ...header,
     ..._.flatten([
       ...(await Promise.all(reqA.map((item) => wrapKline(item)))),
-    ]).map((k) => [
+    ]).filter(k => k[0] <= toTS).map((k) => [
       new Date(k[0]).toLocaleString('en-GB'),
       k[1],
       k[2],
